@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onmousedown="numberCountBackward();">50 - 5 number count</button>
+    <button onmousedown="evenNumber();">Even number count</button>
+    <button onmousedown="oddNumber();">oddNumber count</button>
+
+    <script>
+      
+   function numberCountBackward(){
+    var result;
+
+for(var i = 50; i >= 0; i--){
+  document.write(`${i} </br>`);
+    if(i <= 5){
+      
+        break;
+    }
+  
+}
+   }
+
+
+function evenNumber(){
+    var j=50;
+      while(j >= 0){
+             if(j % 2 == 0 && j >=30){
+                document.write(`${j} </br>`);
+             }
+             j--
+            }
+}
+            
+function oddNumber (){
+    var m = 30;
+while( m >=0){
+                 if(m % 2 != 0){
+                    document.write(`${m} </br>`);
+                 }
+                 m--
+             }        
+        
+}
+        
+    </script>
+</body>
+</html>
